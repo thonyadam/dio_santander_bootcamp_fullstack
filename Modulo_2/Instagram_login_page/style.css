@@ -10,7 +10,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: antiquewhite;
+    background-image: linear-gradient(120deg,#FFDC80, #FCAF45, #F77737, #F56040, #FD1D1D, #E1306C, #C13584, #833AB4, #5B51D8, #405DE6);
     margin: 0;
     padding: 0;
     display: flex;
@@ -43,6 +43,7 @@ body{
     flex-direction: column;
     width: 50%;
     min-width: 34rem;
+    min-height: 34rem;
 }
 
 .options-box {
@@ -105,6 +106,10 @@ body{
     padding: 1.3rem 0;
 }
 
+.get-app{
+    color: white;
+}
+
 .store-options {
     display: flex;
     width: 100%;
@@ -125,18 +130,21 @@ body{
 
 .app-download:nth-child(2) {
     background-image: url('./img/google-button.png');
+    border-radius: 6px;
 }
 
-/* media queries */
-
+/* Code for diferrent media implementations */
 
 @media (max-width: 1024px) {
+
     .insta-containner {
         width: 90%;
     }
+
 }
 
 @media (max-width: 650px) {
+
     body {
         background-color: #ffffff;
     }
@@ -156,4 +164,5 @@ body{
     .options-box {
         border: 1px solid transparent;
     }
+
 }
